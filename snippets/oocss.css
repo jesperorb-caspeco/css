@@ -1,0 +1,12 @@
+.button{
+    padding: 1rem;
+    margin: .5rem 1rem;
+}
+
+.primary {
+    color: #00ff00;
+}
+
+.rounded-borders {
+    border-radius: .25rem;
+}

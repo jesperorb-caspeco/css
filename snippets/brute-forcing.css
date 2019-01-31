@@ -1,0 +1,13 @@
+.thing {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: red;
+  float: left;
+}
+
+.thing-variant {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  float: none;
+}

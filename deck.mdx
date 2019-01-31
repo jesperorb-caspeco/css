@@ -1,0 +1,140 @@
+export { default as theme } from "./theme";
+import { Head } from "mdx-deck";
+import { CodeSurfer } from "mdx-deck-code-surfer";
+import WhiteSlide from "./WhiteSlide";
+
+<Head>
+  <title>CSS</title>
+</Head>
+
+# CSS
+
+---
+
+export default WhiteSlide
+
+![css](images/css.png)
+
+---
+
+## Arv
+
+Subklassen ärver från basklassen, vi vill undvika att skriva över basklassen
+
+---
+
+<CodeSurfer
+  title="Undvik att skriva över styling"
+  code={require("raw-loader!./snippets/brute-forcing.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 6], notes: "Basklassen" },
+    { range: [8, 13], notes: "Subklassen" }
+  ]}
+/>
+
+---
+
+## Defaults och typade språk
+
+Interface, enums, env-variabler och rimlga defaults är nice
+
+---
+
+<CodeSurfer
+  title="Undvik magic numbers"
+  code={require("raw-loader!./snippets/magic-numbers.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 6], notes: "godtyckligt absoluta angivna värden som ish funkar" },
+    { range: [8, 13], notes: "En skala med mått relativa till browsern och resten av sidan" }
+  ]}
+/>
+
+---
+
+## Selektorer
+
+---
+
+
+<CodeSurfer
+  title="Farliga selektorer"
+  code={require("raw-loader!./snippets/selectors.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 3], notes: "Ok" },
+    { range: [5, 7], notes: "Yowsa" },
+    { range: [9, 11], notes: "Åh nej" },
+    { range: [13, 15], notes: "wtf" }
+  ]}
+/>
+
+---
+
+## Eventuella lösningar?
+
+---
+
+## CSS Metodologier
+
+- Object Oriented CSS
+- BEM
+- SMACSS
+
+---
+
+## OOCSS
+
+- Separate structure and skin
+  - Define repeating visual features as separate “skins”
+- Separate container and content
+  -  An object should look the same no matter where you put it.
+
+---
+
+<CodeSurfer
+  title="OOCSS"
+  code={require("raw-loader!./snippets/oocss.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 3], notes: "basen" },
+    { range: [6, 8], notes: "skin" },
+    { range: [10, 12], notes: "skin" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="BEM"
+  code={require("raw-loader!./snippets/bem.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 4], notes: "Baskomponenten, block" },
+    { range: [6, 8], notes: "Ikonen tillhör knappen, __ är element" },
+    { range: [10, 12], notes: "Variant av baskomponent, -- är modifier" },
+    { range: [14, 16], notes: "Ännu en variant av baskomponent, -- är modifier" },
+  ]}
+/>
+
+---
+
+[https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
+
+---
+
+## Preprocessors
+
+LESS / SCSS / SASS / Stylus
+
+---
+
+- https://codepen.io/jesperorb/pen/RvRydy
+- https://codepen.io/jesperorb/pen/zeBLLb
+- https://codepen.io/jesperorb/pen/OdRjPg

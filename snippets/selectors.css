@@ -1,0 +1,15 @@
+div {
+    color: yellow;
+}
+
+.class {
+    color: green;
+}
+
+div.class{
+    color: yellow;
+}
+
+#id {
+    color: red;
+}
