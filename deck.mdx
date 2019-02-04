@@ -48,7 +48,7 @@ Interface, enums, env-variabler och rimlga defaults är nice
   showNumbers={true}
   lang="css"
   steps={[
-    { range: [0, 6], notes: "godtyckligt absoluta angivna värden som ish funkar" },
+    { range: [0, 6], notes: "Godtyckligt absoluta angivna värden som ish funkar" },
     { range: [8, 13], notes: "En skala med mått relativa till browsern och resten av sidan" }
   ]}
 />
@@ -125,7 +125,7 @@ Interface, enums, env-variabler och rimlga defaults är nice
 
 ---
 
-[https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
+[CSS Methodologies](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
 
 ---
 
@@ -135,6 +135,34 @@ LESS / SCSS / SASS / Stylus
 
 ---
 
-- https://codepen.io/jesperorb/pen/RvRydy
-- https://codepen.io/jesperorb/pen/zeBLLb
-- https://codepen.io/jesperorb/pen/OdRjPg
+<CodeSurfer
+  title="Variabler och namespaces"
+  code={require("raw-loader!./snippets/namespaces.less")}
+  showNumbers={true}
+  lang="less"
+  steps={[
+    { range: [0, 11], notes: "Lägger mixins under samma namn" },
+    { range: [3, 6], notes: "Parameter overload" },
+    { range: [7, 10], notes: "Parameter overload" },
+    { range: [13, 15], notes: "Punktnotation för att komma åts" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Maps (3.5.0)"
+  code={require("raw-loader!./snippets/maps.less")}
+  showNumbers={true}
+  lang="less"
+  steps={[
+    { range: [0, 5], notes: "Likt namespaces, mer tänkt för samling av värden" },
+    { range: [7, 9], notes: "Detta går även att göra med namespaces" },
+  ]}
+/>
+
+---
+
+- [LESS Mixins](https://codepen.io/jesperorb/pen/RvRydy)
+- [LESS Loops](https://codepen.io/jesperorb/pen/zeBLLb)
+- [LESS Responsive](https://codepen.io/jesperorb/pen/OdRjPg)
