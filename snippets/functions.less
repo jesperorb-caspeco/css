@@ -1,0 +1,15 @@
+@primary: #fe0;
+@dark: #2d2d2d;
+@light: #f1f1f1;
+
+.button {
+    color: @primary;
+    background-color: contrast(@primary);
+    background-color: contrast(@primary, @dark, @light);
+    border: darken(@primary, 10%);
+}
+
+.complimentary {
+    color: @primary;
+    background-color: spin(@primary, 180);
+}

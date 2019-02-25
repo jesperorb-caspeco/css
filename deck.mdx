@@ -8,74 +8,13 @@ import WhiteSlide from "./WhiteSlide";
 </Head>
 
 # CSS
+### **Cascading** Style Sheets
 
 ---
 
 export default WhiteSlide
 
 ![css](images/css.png)
-
----
-
-## Arv
-
-Subklassen ärver från basklassen, vi vill undvika att skriva över basklassen
-
----
-
-<CodeSurfer
-  title="Undvik att skriva över styling"
-  code={require("raw-loader!./snippets/brute-forcing.css")}
-  showNumbers={true}
-  lang="css"
-  steps={[
-    { range: [0, 6], notes: "Basklassen" },
-    { range: [8, 13], notes: "Subklassen" }
-  ]}
-/>
-
----
-
-## Defaults och typade språk
-
-Interface, enums, env-variabler och rimlga defaults är nice
-
----
-
-<CodeSurfer
-  title="Undvik magic numbers"
-  code={require("raw-loader!./snippets/magic-numbers.css")}
-  showNumbers={true}
-  lang="css"
-  steps={[
-    { range: [0, 6], notes: "Godtyckligt absoluta angivna värden som ish funkar" },
-    { range: [8, 13], notes: "En skala med mått relativa till browsern och resten av sidan" }
-  ]}
-/>
-
----
-
-## Selektorer
-
----
-
-
-<CodeSurfer
-  title="Farliga selektorer"
-  code={require("raw-loader!./snippets/selectors.css")}
-  showNumbers={true}
-  lang="css"
-  steps={[
-    { range: [0, 3], notes: "Ok" },
-    { range: [5, 7], notes: "Yowsa" },
-    { range: [9, 11], notes: "Åh nej" },
-    { range: [13, 15], notes: "wtf" }
-  ]}
-/>
-
----
-
-## Eventuella lösningar?
 
 ---
 
@@ -102,9 +41,9 @@ Interface, enums, env-variabler och rimlga defaults är nice
   showNumbers={true}
   lang="css"
   steps={[
-    { range: [0, 3], notes: "basen" },
-    { range: [6, 8], notes: "skin" },
-    { range: [10, 12], notes: "skin" },
+    { range: [0, 3] },
+    { range: [6, 8] },
+    { range: [10, 12]  },
   ]}
 />
 
@@ -116,10 +55,10 @@ Interface, enums, env-variabler och rimlga defaults är nice
   showNumbers={true}
   lang="css"
   steps={[
-    { range: [0, 4], notes: "Baskomponenten, block" },
-    { range: [6, 8], notes: "Ikonen tillhör knappen, __ är element" },
-    { range: [10, 12], notes: "Variant av baskomponent, -- är modifier" },
-    { range: [14, 16], notes: "Ännu en variant av baskomponent, -- är modifier" },
+    { range: [0, 4] },
+    { range: [6, 8] },
+    { range: [10, 12] },
+    { range: [14, 16] },
   ]}
 />
 
@@ -141,10 +80,26 @@ LESS / SCSS / SASS / Stylus
   showNumbers={true}
   lang="less"
   steps={[
-    { range: [0, 11], notes: "Lägger mixins under samma namn" },
-    { range: [3, 6], notes: "Parameter overload" },
-    { range: [7, 10], notes: "Parameter overload" },
-    { range: [13, 15], notes: "Punktnotation för att komma åts" },
+    { range: [0, 11] },
+    { range: [3, 6] },
+    { range: [7, 10] },
+    { range: [13, 15] },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Mixins"
+  code={require("raw-loader!./snippets/mixins.less")}
+  showNumbers={true}
+  lang="less"
+  steps={[
+    { range: [0, 1] },
+    { range: [3, 5] },
+    { line: 4},
+    { range: [8, 11]},
+    { range: [10, 10] },
   ]}
 />
 
@@ -156,8 +111,22 @@ LESS / SCSS / SASS / Stylus
   showNumbers={true}
   lang="less"
   steps={[
-    { range: [0, 5], notes: "Likt namespaces, mer tänkt för samling av värden" },
-    { range: [7, 9], notes: "Detta går även att göra med namespaces" },
+    { range: [0, 5] },
+    { range: [7, 9] },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Functions"
+  code={require("raw-loader!./snippets/functions.less")}
+  showNumbers={true}
+  lang="less"
+  steps={[
+    { range: [0, 3] },
+    { range: [5, 10] },
+    { range: [12, 15] },
   ]}
 />
 

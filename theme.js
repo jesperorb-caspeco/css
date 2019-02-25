@@ -27,6 +27,9 @@ export default {
     heading: '#ee4b5a',
     link: '#ee4b5a'
   },
+  h3: {
+    color: '#ede593'
+  },
   li: {
     lineHeight: '1.25'
   },

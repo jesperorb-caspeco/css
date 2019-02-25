@@ -1,0 +1,12 @@
+@primary: #53cec3;
+
+.hover(@color) {
+    background-color: lighten(@color, 10%);
+}
+
+a {
+    background-color: @primary;
+    &:hover {
+        .hover(@primary);
+    }
+}

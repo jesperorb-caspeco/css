@@ -8,7 +8,7 @@ export default ({ children }) =>
       backgroundColor: 'white',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
     }}>
     {children}
   </div>
