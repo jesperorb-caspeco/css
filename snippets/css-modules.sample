@@ -1,0 +1,13 @@
+/* button.css */
+.button {
+  color: red;
+}
+
+/* Button.jsx */
+import styles from "./button.css";
+const Button = () => {
+  return <button className={styles.button} />
+}
+
+<!-- index.html -->
+<button className="Button__button___2U3ua" />

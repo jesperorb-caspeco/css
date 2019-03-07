@@ -18,59 +18,19 @@ export default WhiteSlide
 
 ---
 
-## CSS Metodologier
+## Två huvudsakliga problem
 
-- Object Oriented CSS
-- BEM
-- SMACSS
-
----
-
-## OOCSS
-
-- Separate structure and skin
-  - Define repeating visual features as separate “skins”
-- Separate container and content
-  -  An object should look the same no matter where you put it.
-
----
-
-<CodeSurfer
-  title="OOCSS"
-  code={require("raw-loader!./snippets/oocss.css")}
-  showNumbers={true}
-  lang="css"
-  steps={[
-    { range: [0, 3] },
-    { range: [6, 8] },
-    { range: [10, 12]  },
-  ]}
-/>
-
----
-
-<CodeSurfer
-  title="BEM"
-  code={require("raw-loader!./snippets/bem.css")}
-  showNumbers={true}
-  lang="css"
-  steps={[
-    { range: [0, 4] },
-    { range: [6, 8] },
-    { range: [10, 12] },
-    { range: [14, 16] },
-  ]}
-/>
-
----
-
-[CSS Methodologies](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
+* Arkitektur
+* Namngivning
 
 ---
 
 ## Preprocessors
 
-LESS / SCSS / SASS / Stylus
+* LESS
+* SCSS 
+* SASS
+* Stylus
 
 ---
 
@@ -97,10 +57,13 @@ LESS / SCSS / SASS / Stylus
   steps={[
     { range: [0, 1] },
     { range: [3, 5] },
-    { line: 4},
-    { range: [8, 11]},
+    { range: [4, 4]},
+    { range: [7, 11]},
+    { range: [8, 8] },
     { range: [10, 10] },
+    { range: [0, 12] },
   ]}
+/>
 />
 
 ---
@@ -119,7 +82,7 @@ LESS / SCSS / SASS / Stylus
 ---
 
 <CodeSurfer
-  title="Functions"
+  title="Built in functions"
   code={require("raw-loader!./snippets/functions.less")}
   showNumbers={true}
   lang="less"
@@ -127,6 +90,7 @@ LESS / SCSS / SASS / Stylus
     { range: [0, 3] },
     { range: [5, 10] },
     { range: [12, 15] },
+    { range: [0, 15]}
   ]}
 />
 
@@ -135,3 +99,90 @@ LESS / SCSS / SASS / Stylus
 - [LESS Mixins](https://codepen.io/jesperorb/pen/RvRydy)
 - [LESS Loops](https://codepen.io/jesperorb/pen/zeBLLb)
 - [LESS Responsive](https://codepen.io/jesperorb/pen/OdRjPg)
+
+---
+
+## CSS Metodologier
+
+- Object Oriented CSS
+- SMACSS
+- BEM
+
+---
+
+## OOCSS
+
+- **Separate structure and skin**
+  - Define repeating visual features as separate “skins”
+- **Separate container and content**
+  -  An object should look the same no matter where you put it.
+
+---
+
+<CodeSurfer
+  title="OOCSS"
+  code={require("raw-loader!./snippets/oocss.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 4] },
+    { range: [6, 8] },
+    { range: [10, 12] },
+    { range: [0, 12] }
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="BEM"
+  code={require("raw-loader!./snippets/bem.css")}
+  showNumbers={true}
+  lang="css"
+  steps={[
+    { range: [0, 4] },
+    { range: [6, 8] },
+    { range: [10, 12] },
+    { range: [14, 16] },
+  ]}
+/>
+
+---
+
+[CSS Methodologies](https://codepen.io/hidanielle/post/css-methodologies-naming-conventions-and-file-structures)
+
+---
+
+## Utmanare
+
+* CSS-in-JS
+* CSS Modules
+
+---
+
+<CodeSurfer
+  title="CSS Modules"
+  code={require("raw-loader!./snippets/css-modules.sample")}
+  showNumbers={true}
+  lang="js"
+  steps={[
+    { range: [0, 4] },
+    { range: [6, 10] },
+    { range: [12, 13] },
+    { range: [0, 13]}
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Emotion"
+  code={require("raw-loader!./snippets/emotion.sample")}
+  showNumbers={true}
+  lang="js"
+  steps={[
+    { range: [0, 3] },
+    { range: [5, 10] },
+    { range: [12, 15] },
+  ]}
+/>
